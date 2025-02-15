@@ -5,13 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="/css/invoice.css">
-
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-
-
+    <link rel="stylesheet" href="css/tranzactions.css">
     <title>Document</title>
 </head>
 <body>
@@ -77,23 +71,48 @@
 
             <div class="payment__container">
                 <div class="payment__header">
-                    
+                    <h4 style="margin: 0px;" class="payment_header_h4">Способ оплаты</h4>
+                    <form action="" method="get">
+                        <button type="submit" class="payment_button"><h4 style="margin: 0px; font: 10px Helvetica; size: 10px;">ДОБАВИТЬ</h4></button>
+                    </form>
                 </div>
                 <div class="payment-methods">
-                    <div class="payment-card">
-                        <div class="card-info">
-                            
+        
+                    <div class="payment-card payment-card-mastercard">
+                        <div style="display: inline-flex; gap: 10px; ">
+                            <div class="mastercard_img">
+                                <img src="img/Ellipse 48.png" alt="" class="mastercardImg mastercard_red">
+                                <img src="img/Ellipse 49.png" alt="" class="mastercardImg mastercard_orange">
+                            </div>
+                            <div class="card-info">
+                                <form action="" method="get">
+                                    <label for="mastercard_number"></label>
+                                    <input class="input-card-info" type="number" id="mastercard_number" placeholder="7812 2139 0823 XXXX">
+                                </form>
+                            </div>
                         </div>
-                       
+                        <div>
+                            <img src="img/Pensil.png" alt="" class="pencil">
+                        </div>
                     </div>
-                    <div class="payment-card">
-                        <div class="card-info">
-                            
+                    
+                    <div class="payment-card payment-card-visa">
+                        <div style="display: inline-flex; gap: 10px;">
+                            <div class="visa_img">
+                                <img src="img/Visa.png" alt="" class="visacard" style="vertical-align: middle;">
+                            </div>
+                            <div class="card-info">
+                                <form action="" method="get">
+                                    <label for="visacard_number"></label>
+                                    <input class="input-card-info" type="number" id="visacard_number" placeholder="7812 2139 0823 XXXX">
+                                </form>
+                            </div>
                         </div>
-                        <div class="edit-btn">
-
+                        <div>
+                            <img src="img/Pensil.png" alt="" class="pencil">
                         </div>
                     </div>
+        
                 </div>
             </div>
 
@@ -125,45 +144,78 @@
                     </div>
                     </div>
 
-                    <div class="tranzactions-blocks">
+                    <div class="tranzactions">
                         <div class="tranzactions-header">
-                            
+                            <div class="heading">Ваши транзакции</div>
+                            <div class="heading date"><img src="img/Calendar.svg"> 23 - 30 марта 2020 года</div>
                         </div>
-                        <div class="tranzactions-block">
-                           
-                            <div class="tranzactions-block-down">
-                                
-                                <div class="tranzactions-block-text">
-                                   
+                        <div class="tranzactions-blocks">
+                            <div class="tranzactions-block">
+                                <div class="subheading date">САМЫЙ НОВЫЙ</div>
+                            
+                                <div class="tranzaction">
+                                    <img src="img/red_arrow_down.svg" class="tranzaction-status">
+                                    <div class="tranzaction-text">
+                                        <div>
+                                            <div class="subheading">Яндекс</div>
+                                            <div class="subheading date">27 марта 2020 года, в 12:30 часов</div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="tranzactions-block-up">
-                               
-                                <div class="tranzactions-block-text">
+                                <div class="tranzaction">
+                                    <img src="img/green_arrow_up.svg" class="tranzaction-status">
+                                    <div class="tranzaction-text">
+                                        <div>
+                                            <div class="subheading">Газпром</div>
+                                            <div class="subheading date">27 марта 2020 года, в 12:30 часов</div>
+                                        </div>
+                                        <div class="subheading green">+2500₽</div>
+                                    </div>
                                     
                                 </div>
-                                
                             </div>
-                        </div>
-                        <div class="tranzactions-block">
-                            <div class="tranzactions-block-up">
-                                <div class="tranzactions-block-text">
+                            <div class="tranzactions-block">
+                                <div class="subheading date">ВЧЕРА</div>
 
+                                <div class="tranzaction">
+                                    <img src="img/green_arrow_up.svg" class="tranzaction-status">
+                                    <div class="tranzaction-text">
+                                        <div>
+                                            <div class="subheading">Страйп</div>
+                                            <div class="subheading date">26 марта 2020 года, в 13:45 часов</div>
+                                        </div>
+                                        <div class="subheading green">+800₽</div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="tranzactions-block-up">
-                                <div class="tranzactions-block-text">
-
+                                <div class="tranzaction">
+                                    <img src="img/green_arrow_up.svg" class="tranzaction-status">
+                                    <div class="tranzaction-text">
+                                        <div>
+                                            <div class="subheading">ВК</div>
+                                            <div class="subheading date">26 марта 2020 года, в 12:30 часов</div>
+                                        </div>
+                                        <div class="subheading green">+1700₽</div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="tranzactions-block-down">
-                                <div class="tranzactions-block-text">
-
+                                <div class="tranzaction">
+                                    <img src="img/grey_alarm.svg" class="tranzaction-status">
+                                    <div class="tranzaction-text">
+                                        <div>
+                                            <div class="subheading">Кион</div>
+                                            <div class="subheading date">26 марта 2020 года, в 05:00 часов</div>
+                                        </div>
+                                        <div class="subheading">В ожидании</div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="tranzactions-block-down">
-                                <div class="tranzactions-block-text">
-
+                                <div class="tranzaction">
+                                    <img src="img/red_arrow_down.svg" class="tranzaction-status">
+                                    <div class="tranzaction-text">
+                                        <div>
+                                            <div class="subheading">Тинькофф</div>
+                                            <div class="subheading date">25 марта 2020 года, в 16:30 часов</div>
+                                        </div>
+                                        <div class="subheading red">-987₽</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
