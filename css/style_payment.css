@@ -1,0 +1,80 @@
+
+.payment__container {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 990px;
+    height: auto;
+
+    border-radius: 20px;
+    padding: 24px;
+    gap: 24px;
+
+    background-color: #FFFFFF;
+}
+
+.payment__header{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.payment_header_h4{
+    font-family: Helvetica, sans-serif;
+}
+.payment_button{
+    background-color: #2D3748;
+    color: #fff;
+    
+    font: Helvetica;
+    padding: 5.5px 22.75px ;
+    border-radius: 8px;
+    
+}
+
+.payment-methods{
+    display: flex;
+    gap: 24px;
+}
+.input-card-info{
+    border: 1px solid #FFFFFF;
+}
+
+.payment-card{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: auto;
+
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+
+    padding: 22.75px 20px ;
+    
+}
+
+.mastercard_img{
+    position: relative;
+}
+
+.mastercard_red{
+    width: 13.26px;
+    height: 13.26px;
+    position: relative;
+    z-index: 1;
+}
+.mastercard_orange{
+    width: 13.26px;
+    height: 13.26px;
+    position: relative;
+    z-index: 1;
+    right: 10px;
+}
+.visacard{
+    width: 24.5;
+    height: 8.52173900604248;
+}
+.pencil {
+    padding: 3px;
+}
