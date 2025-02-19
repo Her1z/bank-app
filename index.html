@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/css/invoice.css">
     <link rel="stylesheet" href="css/tranzactions.css">
     <link rel="stylesheet" href="css/style_payment.css">
+    <link rel="stylesheet" href="css/bankcard.css">
     <title>Document</title>
 </head>
 <body>
@@ -52,22 +53,42 @@
         </div>
         <section class="mastercard height-section">
             <div class="mastercard__container">
-                <div class="mastercard__image">
-                    
-                </div>
-                <div class="mastercard__item">
-                    <div class="mastercard--number">
-                    
-                    </div>
-                    <div class="mastercard__tabs">
-                        <div class="mastercard__valid">
+                <article class="payment-info"> 
+                    <div class="card"> 
+                        <div id="circl"><img id="circle" src="Circles.png" alt="circles"></div>
+                        
+                        <div class="card-number">
+                            <p>7812 2139 0823 XXXX</p> 
+                        </div> 
+                        <div class="card-details">
+                            <div class="carddetail1">
+                                <p>ДЕЙСТВИТЕЛЕН ДО</p>
+                                <p>05/24</p></div>
+                            <div class="carddetail1">
+                                <p>CVV</p>
+                                <p>09X</p> 
+                            </div>
                            
                         </div>
-                        <div class="mastercard__cvv">
-                           
-                        </div>
                     </div>
-                </div>
+                </article>
+             
+            <article class="details">
+             <div class="balance">
+                <img src="Icon.png" alt="Wallet Icon">
+                <p class="card-text">Зарплата</p> 
+                <p class="description">Интерактивное приложение</p> 
+                <hr style="background: linear-gradient(to right, #ffffff, #b3b3b3, #ffffff);height: 1px;border: 0;">
+                <p class="amount">+ 20.000Р</p>
+            </div>
+             <div class="account">
+                <img src="icon2.png" alt="Paypal Icon">
+                <p class="card-text">Счет</p> 
+                <p class="description">Фриланс</p>
+                <hr style="background: linear-gradient(to right, #ffffff, #b3b3b3, #ffffff);height: 1px;border: 0;">
+                <p class="amount">455.00Р</p>
+             </div>
+            </article>
             </div>
 
             <div class="payment__container">
