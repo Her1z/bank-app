@@ -14,7 +14,7 @@
    width: 460px; 
    max-height:240px;
    border-radius: 20px; 
-   background-image: url('Background.png');
+   background-image: url('img/Background.png');
    background-size: cover;
    flex-direction: column;
    justify-content: end;
