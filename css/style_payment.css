@@ -24,8 +24,10 @@
 .payment_button{
     background-color: #2D3748;
     color: #fff;
-    
+    margin: 0px;
     font: Helvetica;
+    font-size: 10px;
+    size: 10px;
     padding: 5.5px 22.75px ;
     border-radius: 8px;
     
