@@ -1,6 +1,7 @@
 
 
 .amount__container{
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
@@ -40,6 +41,7 @@
     border-color: #3182CE;
     border-radius: 8px;
     padding: 8px 8px;
+    cursor: pointer;
 }
 
 .invoise_see_all-button:hover{
