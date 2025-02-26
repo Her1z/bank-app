@@ -1,3 +1,7 @@
+html {
+    background: #F7FAFC;
+}
+
 body {
     padding-left: calc(50% - 960px);
     padding-right: calc(50% - 960px);
@@ -11,4 +15,43 @@ body {
     left: 0px;
     top: 0px;
     z-index: -1;
+}
+
+main {
+    display: flex;
+    gap: 0 19px;
+}
+
+.control-panel {
+    height: 727px;
+}
+
+#main__containers {
+    display: flex;
+    flex-direction: column;
+    gap: 24px 0;
+}
+
+.header__container {
+    display: flex;
+}
+
+.mastercard.height-section {
+    flex: 173;
+}
+
+.height-amount {
+    flex: 100;
+}
+
+.footer__container {
+    display: flex;
+}
+
+.info-sums {
+    flex: 136;
+}
+
+.tranzactions {
+    flex: 100;
 }
