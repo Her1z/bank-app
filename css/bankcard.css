@@ -1,0 +1,102 @@
+.mastercard__container {
+    
+    
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 20px;
+    flex-direction: row;
+    gap: 20px;  }
+.card{ 
+   display: flex;
+   color: white; 
+   padding: 31px; 
+   width: 460px; 
+   height:240px;
+   border-radius: 20px; 
+   background-image: url('../img/Background.jpg');
+   background-size: cover;
+   background-position: 100%;
+   background-repeat: no-repeat;
+   flex-direction: column;
+   justify-content: end;
+   gap:13px
+
+   
+   
+
+} 
+
+#circl{
+   width: 50px;
+   height: 33px;
+  
+   margin-bottom: 80px;
+   align-self: flex-end;
+   
+   
+}
+
+.card-number p { 
+   font-size: 20px; 
+   letter-spacing: 2px; }
+.card-details  { 
+   display: flex;
+  flex-direction: row;
+   font-size: 14px; 
+   margin-top: 1px;
+   gap:22px;
+}
+
+.carddetail1{
+   display: flex;
+   flex-direction: column;
+   gap:5px;
+
+}
+.details { 
+   display: flex; 
+   
+   flex-direction:row;
+   justify-content: space-between;
+   gap:20px }
+
+   .details img {
+   width: 64px;
+   height: 64px;
+   
+
+}
+.balance, .account { 
+   width: 240px;
+   height: 240px;
+   background-color: white;
+   border-radius: 20px;
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 5px;
+
+   text-align: center;
+   
+
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   
+}
+
+   
+.card-text { 
+   font-size: 18px; 
+    }
+.amount { 
+   font-size: 18px; 
+   font-weight: bold; }
+.description { 
+   font-size: 12px; 
+   color: #888; 
+   margin-top: 5px; }
+hr {
+   margin:3px 0px 3px 0px;
+}
