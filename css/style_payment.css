@@ -18,14 +18,20 @@
     justify-content: space-between;
     align-items: center;
 }
-.payment_header_h4{
-    font-family: Helvetica, sans-serif;
+.payment_header_p{
+    margin: 0px;
+
+    font-family: 'Helvetica', 'Times New Roman';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
 }
 .payment_button{
     background-color: #2D3748;
     color: #fff;
     margin: 0px;
-    font: Helvetica;
+  
+    font-family: 'Helvetica';
     font-size: 10px;
     size: 10px;
     padding: 5.5px 22.75px ;
