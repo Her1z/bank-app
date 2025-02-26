@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/bankcard.css">
     <link rel="stylesheet" href="./css/style_control-panel.css">
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
     <title>Document</title>
 </head>
 <body>
@@ -19,16 +20,35 @@
         <div class="header__container">
             <div class="header-box">
                 <nav class="header__breadcrumbs breadcrumbs">
-                    
+                    <p class="hd_p">Страницы / Выставление счетов</p>
+                    <h2 class="hd_h2">Выставление счетов</h2>
                 </nav>
-               
             </div>
             <div class="header__controls controls">
                 <div class="control__search">
-                   
+                    <div>
+                        <img class="img_header_seek" src="img/seek.svg" alt="seek">
+                    </div>
+                    <div>
+                        <label for="search"></label>
+                        <input type="text" id="search" placeholder="Введите" class="input_text">
+                    </div>  
                 </div>
                 <div class="controls__actions actions">
-                    
+                    <div class="header_enter">
+                        <button class="header_button" type="submit">
+                            <img class="img_header" src="img/human_header.svg" alt="human">
+                            Войти
+                        </button>
+                    </div>
+                    <div style="display: flex;
+                                align-items: center;">
+                        <img class="img_header" src="img/settings.svg" alt="settings"> 
+                    </div>
+                    <div style="display: flex;
+                                align-items: center;">
+                        <img id="bell" class="img_header" src="img/bell.svg" alt="bell">
+                    </div>
                 </div>
             </div>
         </div>
@@ -132,7 +152,7 @@
 
             <div class="payment__container">
                 <div class="payment__header">
-                    <h4 style="margin: 0px;" class="payment_header_h4">Способ оплаты</h4>
+                    <p class="payment_header_p">Способ оплаты</p>
                     <form method="get">
                         <button type="submit" class="payment_button">ДОБАВИТЬ</button>
                     </form>
@@ -142,8 +162,8 @@
                     <div class="payment-card payment-card-mastercard">
                         <div style="display: inline-flex; gap: 10px; ">
                             <div class="mastercard_img">
-                                <img src="img/Ellipse_48.svg" alt="" class="mastercardImg mastercard_red">
-                                <img src="img/Ellipse_49.svg" alt="" class="mastercardImg mastercard_orange">
+                                <img src="img/Ellipse_48.svg" alt="master" class="mastercardImg mastercard_red">
+                                <img src="img/Ellipse_49.svg" alt="ccard" class="mastercardImg mastercard_orange">
                             </div>
                             <div class="card-info">
                                 <form method="get">
@@ -173,7 +193,6 @@
                             <img src="img/pencil.svg" alt="pensil" class="pencil">
                         </div>
                     </div>
-        
                 </div>
             </div>
 
