@@ -100,11 +100,3 @@
 hr {
    margin:3px 0px 3px 0px;
 }
-footer{
-   display: flex;
-   flex-direction: row;
-   justify-content: flex-end;
-   gap:36px;
-   color: #A0AEC0;
-   font-size: 15px;
-}
