@@ -1,5 +1,5 @@
 .mastercard__container {
-    
+    font-family:Helvetica, 'Times New Roman';
     
     display: flex; 
     justify-content: center; 
@@ -7,7 +7,7 @@
     margin: 20px;
     flex-direction: row;
     gap: 20px;  }
-.card{ 
+.masterscard{ 
    display: flex;
    color: white; 
    padding: 31px; 
@@ -31,19 +31,19 @@
    width: 50px;
    height: 33px;
   
-   margin-bottom: 80px;
+   margin-bottom: 70px;
    align-self: flex-end;
    
    
 }
 
 .card-number p { 
-   font-size: 20px; 
-   letter-spacing: 2px; }
+   font-size: 24px; 
+   font-weight: bold; }
 .card-details  { 
    display: flex;
   flex-direction: row;
-   font-size: 14px; 
+   font-size: 16px; 
    margin-top: 1px;
    gap:22px;
 }
@@ -51,7 +51,7 @@
 .carddetail1{
    display: flex;
    flex-direction: column;
-   gap:5px;
+   gap:8px;
 
 }
 .details { 
@@ -82,7 +82,7 @@
    text-align: center;
    
 
-   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   
    
 }
 
@@ -99,4 +99,12 @@
    margin-top: 5px; }
 hr {
    margin:3px 0px 3px 0px;
+}
+footer{
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   gap:36px;
+   color: #A0AEC0;
+   font-size: 15px;
 }

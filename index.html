@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/style_control-panel.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
 
     <title>Bank App</title>
 </head>
@@ -109,46 +110,46 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
         <section id="main__containers">
             <section class="header__container">
                 <section class="mastercard height-section">
                     <div class="mastercard__container">
                         <article class="payment-info"> 
-                            <div class="card"> 
-                                <div id="circl"><img id="circle" src="img/Circles.png" alt="circles"></div>
+                            <div class="masterscard"> 
+                                <div id="circl"><img id="circle" src="img/circles.svg" alt="circles"></div>
                                 
                                 <div class="card-number">
                                     <p>7812 2139 0823 XXXX</p> 
                                 </div> 
                                 <div class="card-details">
                                     <div class="carddetail1">
-                                        <p>ДЕЙСТВИТЕЛЕН ДО</p>
-                                        <p>05/24</p></div>
+                                        <p style="font-size: 12px;">ДЕЙСТВИТЕЛЕН ДО</p>
+                                        <p style="font-weight: bold;">05/24</p></div>
                                     <div class="carddetail1">
-                                        <p>CVV</p>
-                                        <p>09X</p> 
+                                        <p style="font-size: 12px;">CVV</p>
+                                        <p style="font-weight: bold;">09X</p> 
                                     </div>
-                                
+                                   
                                 </div>
                             </div>
                         </article>
-                    
+                     
                     <article class="details">
-                    <div class="balance">
-                        <img src="img/Icon.png" alt="Wallet Icon" >
+                     <div class="balance">
+                        <img src="img/wallet-icon.svg" alt="Wallet Icon" >
                         <p class="card-text">Зарплата</p> 
                         <p class="description">Интерактивное приложение</p> 
                         <hr style="background: linear-gradient(to right, #ffffff, #b3b3b3, #ffffff);height: 1px;border: 0;width: 120px;">
                         <p class="amount">+ 20.000Р</p>
                     </div>
-                    <div class="account">
-                        <img src="img/icon2.png" alt="Paypal Icon">
+                     <div class="account">
+                        <img src="img/paypal-icon.svg" alt="Paypal Icon">
                         <p class="card-text">Счет</p> 
                         <p class="description">Фриланс</p>
                         <hr style="background: linear-gradient(to right, #ffffff, #b3b3b3, #ffffff);height: 1px;border: 0;width: 120px; ">
                         <p class="amount">455.00Р</p>
-                    </div>
+                     </div>
                     </article>
                     </div>
 
@@ -409,6 +410,70 @@
                 </div>
             </section>
         </section>
-    </main>                <footer></footer>
+        <section class="height-amount">
+            <div class="amount__container">
+                <div class="amount__header">
+                    <p class="header-name">Счета</p>
+                    <button class="invoise_see_all-button">ПОСМОТРЕТЬ ВСЕ</button>
+                </div>
+                <ul class="invoice-list">
+                    <li class="invoice-item">
+                        <div class="invoice-info">
+                            <p class="invoice-date">Март, 01, 2020</p>
+                            <h5 class="invoice-id">#MS-415646</h5>
+                        </div>
+                        <div class="invoice-right">
+                            <h5 class="invoice-sums">₽180</h5>
+                            <button class="pdf-invoice-button"><img src="/img/PDF-icon.svg" alt="pdf icon">PDF</button>
+                        </div>
+                    </li>
+                    <li class="invoice-item">
+                        <div class="invoice-info">
+                            <p class="invoice-date">Февраль, 10, 2021</p>
+                            <h5 class="invoice-id">#RV-126749</h5>
+                        </div>
+                        <div class="invoice-right">
+                            <h5 class="invoice-sums">₽250</h5>
+                            <button class="pdf-invoice-button"><img src="/img/PDF-icon.svg" alt="pdf icon">PDF</button>
+                        </div>
+                    </li>
+                    <li class="invoice-item">
+                        <div class="invoice-info">
+                            <p class="invoice-date">Апрель, 05, 2020</p>
+                            <h5 class="invoice-id">#FB-212562</h5>
+                        </div>
+                        <div class="invoice-right">
+                            <h5 class="invoice-sums">₽560</h5>
+                            <button class="pdf-invoice-button"><img src="/img/PDF-icon.svg" alt="pdf icon">PDF</button>
+                        </div>
+                    </li>
+                    <li class="invoice-item">
+                        <div class="invoice-info">
+                            <p class="invoice-date">Июнь, 25, 2019</p>
+                            <h5 class="invoice-id">#QW-103578</h5>
+                        </div>
+                        <div class="invoice-right">
+                            <h5 class="invoice-sums">₽120</h5>
+                            <button class="pdf-invoice-button"><img src="/img/PDF-icon.svg" alt="pdf icon">PDF</button>
+                        </div>
+                    </li>   
+                    <li class="invoice-item">
+                        <div class="invoice-info">
+                            <p class="invoice-date">Март, 01, 2019</p>
+                            <h5 class="invoice-id">#AR-803481</h5>
+                        </div>
+                        <div class="invoice-right">
+                            <h5 class="invoice-sums">₽300</h5>
+                            <button class="pdf-invoice-button"><img src="/img/PDF-icon.svg" alt="pdf icon">PDF</button>
+                        </div>
+                    </li>   
+                </ul>
+        </section>
+    </main>                
+    <footer>
+        <p>Творческое время</p>
+        <p>Блог</p>
+        <p>Лицензия</p>
+    </footer>
 </body>
 </html>
