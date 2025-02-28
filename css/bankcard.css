@@ -1,5 +1,5 @@
 .mastercard__container {
-    
+    font-family:Helvetica, 'Times New Roman';
     
     display: flex; 
     justify-content: center; 
@@ -82,7 +82,7 @@
    text-align: center;
    
 
-   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   
    
 }
 

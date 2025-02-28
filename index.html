@@ -4,331 +4,416 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="/css/invoice.css">
+    <link rel="stylesheet" href="css/invoice.css">
     <link rel="stylesheet" href="css/tranzactions.css">
     <link rel="stylesheet" href="css/style_payment.css">
     <link rel="stylesheet" href="css/bankcard.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/style_control-panel.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+
+    <title>Bank App</title>
 </head>
+<div id="background"></div>
 <body>
     <header>
         <div class="header__container">
             <div class="header-box">
                 <nav class="header__breadcrumbs breadcrumbs">
-                    
+                    <p class="hd_p">Страницы / Выставление счетов</p>
+                    <h2 class="hd_h2">Выставление счетов</h2>
                 </nav>
-               
             </div>
             <div class="header__controls controls">
                 <div class="control__search">
-                   
+                    <div>
+                        <img class="img_header_seek" src="img/seek.svg" alt="seek">
+                    </div>
+                    <div>
+                        <label for="search"></label>
+                        <input type="text" id="search" placeholder="Введите" class="input_text">
+                    </div>  
                 </div>
                 <div class="controls__actions actions">
-                    
+                    <div class="header_enter">
+                        <button class="header_button" type="submit">
+                            <img class="img_header" src="img/human_header.svg" alt="human">
+                            Войти
+                        </button>
+                    </div>
+                    <div style="display: flex;
+                                align-items: center;">
+                        <img class="img_header" src="img/settings.svg" alt="settings"> 
+                    </div>
+                    <div style="display: flex;
+                                align-items: center;">
+                        <img id="bell" class="img_header" src="img/bell.svg" alt="bell">
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
     <main>
-        <div class="control-panel">
+        <section class="control-panel">
             <div class="control-panel__container">
                 <div class="control-panel__info">
                     <div class="control-panel__item">
-                        
-                    </div>
-                    <div class="control-panel__item">
                         <div class="control-panel--title">
-                           
+                            <div class="control-panel--title_div">
+                                <div class="control-panel--title_div__img">
+                                     <img class="control-panel--title_img" src="./img/control_panel/house.svg" alt="house">
+                                 </div>
+                                <p class="control-panel--title_p">Панель управления</p>
+                            </div>
                         </div>
-                        <nav>
-                            
+                        <nav class="control-panel_nav">
+                            <ul>
+                                <li class="control-panel_nav__li">
+                                    <img src="./img/control_panel/chart.svg" alt="chart">
+                                    <p class="control-panel_nav__p">Таблицы</p>
+                                </li>
+                                <li class="control-panel_nav__li">
+                                    <img src="./img/control_panel/card.svg" alt="card">
+                                    <p class="control-panel_nav__p">Выставление счетов</p>
+                                </li>
+                                <li class="control-panel_nav__li">
+                                    <img src="./img/control_panel/default.svg" alt="default">
+                                    <p class="control-panel_nav__p">RTL</p>
+                                </li>
+                            </ul>
                         </nav>
+                        <h3 class="control-panel_nav__h3">СТРАНИЦЫ АККАУНТА</h3>
+                        <nav class="control-panel_nav">
+                            <ul> 
+                                <li class="control-panel_nav__li">
+                                    <img src="./img/control_panel/human.svg" alt="human">
+                                    <p class="control-panel_nav__p">Профиль</p>
+                                </li>
+                                <li class="control-panel_nav__li">
+                                    <img src="./img/control_panel/doc.svg" alt="doc">
+                                    <p class="control-panel_nav__p">Войти</p>
+                                </li>
+                                <li class="control-panel_nav__li li6">
+                                    <img src="./img/control_panel/sharp.svg" alt="sharp">
+                                    <p class="control-panel_nav__p">Зарегистрироваться</p>
+                                </li>
+                            </ul>
+                        </nav>
+
                     </div>
                     <div class="control-panel__item">
-                       
+                       <img class="control-panel__item__img" src="./img/control_panel/icon-documentation.png" alt="icon-documentation">
+                       <h2 class="control-panel__item__p">Нужна помощь?</h2>
+                       <button class="control-panel__item__but">ДОКУМЕНТАЦИЯ</button>
                     </div>
                 </div>
             </div>
-        </div>
-        <section class="mastercard height-section">
-            <div class="mastercard__container">
-                <article class="payment-info"> 
-                    <div class="masterscard"> 
-                        <div id="circl"><img id="circle" src="img/circles.svg" alt="circles"></div>
-                        
-                        <div class="card-number">
-                            <p>7812 2139 0823 XXXX</p> 
-                        </div> 
-                        <div class="card-details">
-                            <div class="carddetail1">
-                                <p style="font-size: 12px;">ДЕЙСТВИТЕЛЕН ДО</p>
-                                <p style="font-weight: bold;">05/24</p></div>
-                            <div class="carddetail1">
-                                <p style="font-size: 12px;">CVV</p>
-                                <p style="font-weight: bold;">09X</p> 
+        </section>
+        <section id="main__containers">
+            <section class="header__container">
+                <section class="mastercard height-section">
+                    <div class="mastercard__container">
+                        <article class="payment-info"> 
+                            <div class="masterscard"> 
+                                <div id="circl"><img id="circle" src="img/circles.svg" alt="circles"></div>
+                                
+                                <div class="card-number">
+                                    <p>7812 2139 0823 XXXX</p> 
+                                </div> 
+                                <div class="card-details">
+                                    <div class="carddetail1">
+                                        <p style="font-size: 12px;">ДЕЙСТВИТЕЛЕН ДО</p>
+                                        <p style="font-weight: bold;">05/24</p></div>
+                                    <div class="carddetail1">
+                                        <p style="font-size: 12px;">CVV</p>
+                                        <p style="font-weight: bold;">09X</p> 
+                                    </div>
+                                   
+                                </div>
                             </div>
-                           
-                        </div>
+                        </article>
+                     
+                    <article class="details">
+                     <div class="balance">
+                        <img src="img/wallet-icon.svg" alt="Wallet Icon" >
+                        <p class="card-text">Зарплата</p> 
+                        <p class="description">Интерактивное приложение</p> 
+                        <hr style="background: linear-gradient(to right, #ffffff, #b3b3b3, #ffffff);height: 1px;border: 0;width: 120px;">
+                        <p class="amount">+ 20.000Р</p>
                     </div>
-                </article>
-             
-            <article class="details">
-             <div class="balance">
-                <img src="img/wallet-icon.svg" alt="Wallet Icon" >
-                <p class="card-text">Зарплата</p> 
-                <p class="description">Интерактивное приложение</p> 
-                <hr style="background: linear-gradient(to right, #ffffff, #b3b3b3, #ffffff);height: 1px;border: 0;width: 120px;">
-                <p class="amount">+ 20.000Р</p>
-            </div>
-             <div class="account">
-                <img src="img/paypal-icon.svg" alt="Paypal Icon">
-                <p class="card-text">Счет</p> 
-                <p class="description">Фриланс</p>
-                <hr style="background: linear-gradient(to right, #ffffff, #b3b3b3, #ffffff);height: 1px;border: 0;width: 120px; ">
-                <p class="amount">455.00Р</p>
-             </div>
-            </article>
-            </div>
+                     <div class="account">
+                        <img src="img/paypal-icon.svg" alt="Paypal Icon">
+                        <p class="card-text">Счет</p> 
+                        <p class="description">Фриланс</p>
+                        <hr style="background: linear-gradient(to right, #ffffff, #b3b3b3, #ffffff);height: 1px;border: 0;width: 120px; ">
+                        <p class="amount">455.00Р</p>
+                     </div>
+                    </article>
+                    </div>
 
-            <div class="payment__container">
-                <div class="payment__header">
-                    <h4 style="margin: 0px;" class="payment_header_h4">Способ оплаты</h4>
-                    <form action="" method="get">
-                        <button type="submit" class="payment_button"><h4 style="margin: 0px; font: 10px Helvetica; size: 10px;">ДОБАВИТЬ</h4></button>
-                    </form>
-                </div>
-                <div class="payment-methods">
-        
-                    <div class="payment-card payment-card-mastercard">
-                        <div style="display: inline-flex; gap: 10px; ">
-                            <div class="mastercard_img">
-                                <img src="img/Ellipse 48.png" alt="" class="mastercardImg mastercard_red">
-                                <img src="img/Ellipse 49.png" alt="" class="mastercardImg mastercard_orange">
-                            </div>
-                            <div class="card-info">
-                                <form action="" method="get">
-                                    <label for="mastercard_number"></label>
-                                    <input class="input-card-info" type="number" id="mastercard_number" placeholder="7812 2139 0823 XXXX">
-                                </form>
-                            </div>
+                    <div class="payment__container">
+                        <div class="payment__header">
+                            <p class="payment_header_p">Способ оплаты</p>
+                            <form method="get">
+                                <button type="submit" class="payment_button">ДОБАВИТЬ</button>
+                            </form>
                         </div>
-                        <div>
-                            <img src="img/Pensil.png" alt="" class="pencil">
+                        <div class="payment-methods">
+                
+                            <div class="payment-card payment-card-mastercard">
+                                <div style="display: inline-flex; gap: 10px; ">
+                                    <div class="mastercard_img">
+                                        <img src="img/Ellipse_48.svg" alt="master" class="mastercardImg mastercard_red">
+                                        <img src="img/Ellipse_49.svg" alt="ccard" class="mastercardImg mastercard_orange">                        
+                                    </div>
+                                    <div class="card-info">
+                                        <form method="get">
+                                            <label for="mastercard_number"></label>
+                                            <input class="input-card-info" type="number" id="mastercard_number" placeholder="7812 2139 0823 XXXX">
+                                        </form>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="img/pencil.svg" alt="pensil" class="pencil">
+                                </div>
+                            </div>
+                            
+                            <div class="payment-card payment-card-visa">
+                                <div style="display: inline-flex; gap: 10px;">
+                                    <div class="visa_img">
+                                        <img src="img/visa.svg" alt="visa" class="visacard" style="vertical-align: middle;">
+                                    </div>
+                                    <div class="card-info">
+                                        <form method="get">
+                                            <label for="visacard_number"></label>
+                                            <input class="input-card-info" type="number" id="visacard_number" placeholder="7812 2139 0823 XXXX">
+                                        </form>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="img/pencil.svg" alt="pensil" class="pencil">
+                                </div>
+                            </div>
+                
                         </div>
                     </div>
-                    
-                    <div class="payment-card payment-card-visa">
-                        <div style="display: inline-flex; gap: 10px;">
-                            <div class="visa_img">
-                                <img src="img/Visa.png" alt="" class="visacard" style="vertical-align: middle;">
-                            </div>
-                            <div class="card-info">
-                                <form action="" method="get">
-                                    <label for="visacard_number"></label>
-                                    <input class="input-card-info" type="number" id="visacard_number" placeholder="7812 2139 0823 XXXX">
-                                </form>
-                            </div>
+                </section>
+                <section class="height-amount">
+                    <div class="amount__container">
+                        <div class="amount__header">
+                            <p class="header-name">Счета</p>
+                            <button class="invoise_see_all-button">ПОСМОТРЕТЬ ВСЕ</button>
                         </div>
-                        <div>
-                            <img src="img/Pensil.png" alt="" class="pencil">
-                        </div>
+                        <ul class="invoice-list">
+                            <li class="invoice-item">
+                                <div class="invoice-info">
+                                    <p class="invoice-date">Март, 01, 2020</p>
+                                    <h5 class="invoice-id">#MS-415646</h5>
+                                </div>
+                                <div class="invoice-right">
+                                    <h5 class="invoice-sums">₽180</h5>
+                                    <button class="pdf-invoice-button"><img src="img/PDF-icon.svg" alt="pdf icon">PDF</button>
+                                </div>
+                            </li>
+                            <li class="invoice-item">
+                                <div class="invoice-info">
+                                    <p class="invoice-date">Февраль, 10, 2021</p>
+                                    <h5 class="invoice-id">#RV-126749</h5>
+                                </div>
+                                <div class="invoice-right">
+                                    <h5 class="invoice-sums">₽250</h5>
+                                    <button class="pdf-invoice-button"><img src="img/PDF-icon.svg" alt="pdf icon">PDF</button>
+                                </div>
+                            </li>
+                            <li class="invoice-item">
+                                <div class="invoice-info">
+                                    <p class="invoice-date">Апрель, 05, 2020</p>
+                                    <h5 class="invoice-id">#FB-212562</h5>
+                                </div>
+                                <div class="invoice-right">
+                                    <h5 class="invoice-sums">₽560</h5>
+                                    <button class="pdf-invoice-button"><img src="img/PDF-icon.svg" alt="pdf icon">PDF</button>
+                                </div>
+                            </li>
+                            <li class="invoice-item">
+                                <div class="invoice-info">
+                                    <p class="invoice-date">Июнь, 25, 2019</p>
+                                    <h5 class="invoice-id">#QW-103578</h5>
+                                </div>
+                                <div class="invoice-right">
+                                    <h5 class="invoice-sums">₽120</h5>
+                                    <button class="pdf-invoice-button"><img src="img/PDF-icon.svg" alt="pdf icon">PDF</button>
+                                </div>
+                            </li>   
+                            <li class="invoice-item">
+                                <div class="invoice-info">
+                                    <p class="invoice-date">Март, 01, 2019</p>
+                                    <h5 class="invoice-id">#AR-803481</h5>
+                                </div>
+                                <div class="invoice-right">
+                                    <h5 class="invoice-sums">₽300</h5>
+                                    <button class="pdf-invoice-button"><img src="img/PDF-icon.svg" alt="pdf icon">PDF</button>
+                                </div>
+                            </li>   
+                        </ul>
                     </div>
-        
-                </div>
-            </div>
+                </section>
+            </section>
+            <!-- <section class="height-section">
+                <div class="card__container">
+                    <div class="card">
+                        <div class="active-icon">
 
-            <div class="footer__container">
-                <div class="footer__box">
-                    <div class="info-sums">
-                    
+                        </div>
+                        <div class="card-title"></div>
+                        <div class="card-subtitle"> </div>
+                        <div class="card-amount"></div>
+                    </div>
+                    <div class="card">
+                        <div class="active-icon">
+
+                        </div>
+                        <div class="card-title"></div>
+                        <div class="card-subtitle"></div>
+                        <div class="card-amount"></div>
+                    </div>
+                </div>
+            </section> -->
+            <section class="footer__container">
+                <div class="info-sums">
+                    <h1 class="info-sums-h">Информация о выставлении счетов</h1>
                     <div class="info-sums-block">
                         <div class="info-sums-up">
-                            
+                            <h3 class="info-sums-name">Оливер Лиам</h3>
                             <div class="info-sums-right">
-                               
+                                <img src="img/icons/delete.jpg" width="15" height="15" alt="delete">
+                                <p class="info-sums-right-text">УДАЛИТЬ</p>
+                                <img src="img/icons/edit.jpg" width="15" height="15" alt="edit">
                             </div>
                         </div>
                         <p class="info-sums-text">
+                            Название компании: Викинг Буррито <br>
+                            Адрес электронной почты: oliver@burrito.com
+                            Номер НДС: FRB1235476
                         </p>
-                    </div>
-                    <div class="info-sums-block">
-                        <div class="info-sums-up">
-                            
                         </div>
-                        
-                    </div>
-                    <div class="info-sums-block">
-                        <div class="info-sums-up">
-                          
-                        </div>
-                        
-                    </div>
-                    </div>
-
-                    <div class="tranzactions">
-                        <div class="tranzactions-header">
-                            <div class="heading">Ваши транзакции</div>
-                            <div class="heading date"><img src="img/Calendar.svg"> 23 - 30 марта 2020 года</div>
-                        </div>
-                        <div class="tranzactions-blocks">
-                            <div class="tranzactions-block">
-                                <div class="subheading date">САМЫЙ НОВЫЙ</div>
-                            
-                                <div class="tranzaction">
-                                    <img src="img/red_arrow_down.svg" class="tranzaction-status">
-                                    <div class="tranzaction-text">
-                                        <div>
-                                            <div class="subheading">Яндекс</div>
-                                            <div class="subheading date">27 марта 2020 года, в 12:30 часов</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tranzaction">
-                                    <img src="img/green_arrow_up.svg" class="tranzaction-status">
-                                    <div class="tranzaction-text">
-                                        <div>
-                                            <div class="subheading">Газпром</div>
-                                            <div class="subheading date">27 марта 2020 года, в 12:30 часов</div>
-                                        </div>
-                                        <div class="subheading green">+2500₽</div>
-                                    </div>
-                                    
+                        <div class="info-sums-block">
+                            <div class="info-sums-up">
+                                <h3 class="info-sums-name">Оливер Лиам</h3>
+                                <div class="info-sums-right">
+                                    <img src="img/icons/delete.jpg" width="15" height="15" alt="delete">
+                                    <p class="info-sums-right-text">УДАЛИТЬ</p>
+                                    <img src="img/icons/edit.jpg" width="15" height="15" alt="edit">
                                 </div>
                             </div>
-                            <div class="tranzactions-block">
-                                <div class="subheading date">ВЧЕРА</div>
+                            <p class="info-sums-text">
+                                Название компании: Викинг Буррито<br>
+                                Адрес электронной почты: oliver@burrito.com
+                                Номер НДС: FRB1235476
+                            </p>
+                        </div>
+                        <div class="info-sums-block">
+                            <div class="info-sums-up">
+                                <h3 class="info-sums-name">Оливер Лиам</h3>
+                                <div class="info-sums-right">
+                                    <img src="img/icons/delete.jpg" width="15" height="15" alt="delet">
+                                    <p class="info-sums-right-text">УДАЛИТЬ</p>
+                                    <img src="img/icons/edit.jpg" width="15" height="15" alt="edit">
+                                </div>
+                            </div>
+                            <p class="info-sums-text">
+                                Название компании: Викинг Буррито<br>
+                                Адрес электронной почты: oliver@burrito.com
+                                Номер НДС: FRB1235476
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-                                <div class="tranzaction">
-                                    <img src="img/green_arrow_up.svg" class="tranzaction-status">
-                                    <div class="tranzaction-text">
-                                        <div>
-                                            <div class="subheading">Страйп</div>
-                                            <div class="subheading date">26 марта 2020 года, в 13:45 часов</div>
-                                        </div>
-                                        <div class="subheading green">+800₽</div>
-                                    </div>
-                                </div>
-                                <div class="tranzaction">
-                                    <img src="img/green_arrow_up.svg" class="tranzaction-status">
-                                    <div class="tranzaction-text">
-                                        <div>
-                                            <div class="subheading">ВК</div>
-                                            <div class="subheading date">26 марта 2020 года, в 12:30 часов</div>
-                                        </div>
-                                        <div class="subheading green">+1700₽</div>
-                                    </div>
-                                </div>
-                                <div class="tranzaction">
-                                    <img src="img/grey_alarm.svg" class="tranzaction-status">
-                                    <div class="tranzaction-text">
-                                        <div>
-                                            <div class="subheading">Кион</div>
-                                            <div class="subheading date">26 марта 2020 года, в 05:00 часов</div>
-                                        </div>
-                                        <div class="subheading">В ожидании</div>
-                                    </div>
-                                </div>
-                                <div class="tranzaction">
-                                    <img src="img/red_arrow_down.svg" class="tranzaction-status">
-                                    <div class="tranzaction-text">
-                                        <div>
-                                            <div class="subheading">Тинькофф</div>
-                                            <div class="subheading date">25 марта 2020 года, в 16:30 часов</div>
-                                        </div>
-                                        <div class="subheading red">-987₽</div>
+                <div class="tranzactions">
+                    <div class="tranzactions-header">
+                        <div class="heading">Ваши транзакции</div>
+                        <div class="heading date"><img src="img/Calendar.svg" alt="calendar"> 23 - 30 марта 2020 года</div>
+                    </div>
+                    <div class="tranzactions-blocks">
+                        <div class="tranzactions-block">
+                            <div class="subheading date">САМЫЙ НОВЫЙ</div>
+                        
+                            <div class="tranzaction">
+                                <img src="img/red_arrow_down.svg" alt="red_arrow_down" class="tranzaction-status">
+                                <div class="tranzaction-text">
+                                    <div>
+                                        <div class="subheading">Яндекс</div>
+                                        <div class="subheading date">27 марта 2020 года, в 12:30 часов</div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="tranzaction">
+                                <img src="img/green_arrow_up.svg" alt="green_arrow_up" class="tranzaction-status">
+                                <div class="tranzaction-text">
+                                    <div>
+                                        <div class="subheading">Газпром</div>
+                                        <div class="subheading date">27 марта 2020 года, в 12:30 часов</div>
+                                    </div>
+                                    <div class="subheading green">+2500₽</div>
+                                </div>
+                                
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="height-section">
-            <div class="card__container">
-                <div class="card">
-                    <div class="active-icon">
+                        <div class="tranzactions-block">
+                            <div class="subheading date">ВЧЕРА</div>
 
+                            <div class="tranzaction">
+                                <img src="img/green_arrow_up.svg" alt="green_arrow_up" class="tranzaction-status">
+                                <div class="tranzaction-text">
+                                    <div>
+                                        <div class="subheading">Страйп</div>
+                                        <div class="subheading date">26 марта 2020 года, в 13:45 часов</div>
+                                    </div>
+                                    <div class="subheading green">+800₽</div>
+                                </div>
+                            </div>
+                            <div class="tranzaction">
+                                <img src="img/green_arrow_up.svg" alt="green_arrow_up" class="tranzaction-status">
+                                <div class="tranzaction-text">
+                                    <div>
+                                        <div class="subheading">ВК</div>
+                                        <div class="subheading date">26 марта 2020 года, в 12:30 часов</div>
+                                    </div>
+                                    <div class="subheading green">+1700₽</div>
+                                </div>
+                            </div>
+                            <div class="tranzaction">
+                                <img src="img/grey_alarm.svg" alt="grey_alarm" class="tranzaction-status">
+                                <div class="tranzaction-text">
+                                    <div>
+                                        <div class="subheading">Кион</div>
+                                        <div class="subheading date">26 марта 2020 года, в 05:00 часов</div>
+                                    </div>
+                                    <div class="subheading">В ожидании</div>
+                                </div>
+                            </div>
+                            <div class="tranzaction">
+                                <img src="img/red_arrow_down.svg" alt="red_arrow_down" class="tranzaction-status">
+                                <div class="tranzaction-text">
+                                    <div>
+                                        <div class="subheading">Тинькофф</div>
+                                        <div class="subheading date">25 марта 2020 года, в 16:30 часов</div>
+                                    </div>
+                                    <div class="subheading red">-987₽</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-title"></div>
-                    <div class="card-subtitle"> </div>
-                    <div class="card-amount"></div>
                 </div>
-                <div class="card">
-                    <div class="active-icon">
-
-                    </div>
-                    <div class="card-title"></div>
-                    <div class="card-subtitle"></div>
-                    <div class="card-amount"></div>
-                </div>
-            </div>
+            </section>
         </section>
-        <section class="height-amount">
-            <div class="amount__container">
-                <div class="amount__header">
-                    <p class="header-name">Счета</p>
-                    <button class="invoise_see_all-button">ПОСМОТРЕТЬ ВСЕ</button>
-                </div>
-                <ul class="invoice-list">
-                    <li class="invoice-item">
-                        <div class="invoice-info">
-                            <p class="invoice-date">Март, 01, 2020</p>
-                            <h5 class="invoice-id">#MS-415646</h5>
-                        </div>
-                        <div class="invoice-right">
-                            <h5 class="invoice-sums">₽180</h5>
-                            <button class="pdf-invoice-button"><img src="/img/PDF-icon.svg" alt="pdf icon">PDF</button>
-                        </div>
-                    </li>
-                    <li class="invoice-item">
-                        <div class="invoice-info">
-                            <p class="invoice-date">Февраль, 10, 2021</p>
-                            <h5 class="invoice-id">#RV-126749</h5>
-                        </div>
-                        <div class="invoice-right">
-                            <h5 class="invoice-sums">₽250</h5>
-                            <button class="pdf-invoice-button"><img src="/img/PDF-icon.svg" alt="pdf icon">PDF</button>
-                        </div>
-                    </li>
-                    <li class="invoice-item">
-                        <div class="invoice-info">
-                            <p class="invoice-date">Апрель, 05, 2020</p>
-                            <h5 class="invoice-id">#FB-212562</h5>
-                        </div>
-                        <div class="invoice-right">
-                            <h5 class="invoice-sums">₽560</h5>
-                            <button class="pdf-invoice-button"><img src="/img/PDF-icon.svg" alt="pdf icon">PDF</button>
-                        </div>
-                    </li>
-                    <li class="invoice-item">
-                        <div class="invoice-info">
-                            <p class="invoice-date">Июнь, 25, 2019</p>
-                            <h5 class="invoice-id">#QW-103578</h5>
-                        </div>
-                        <div class="invoice-right">
-                            <h5 class="invoice-sums">₽120</h5>
-                            <button class="pdf-invoice-button"><img src="/img/PDF-icon.svg" alt="pdf icon">PDF</button>
-                        </div>
-                    </li>   
-                    <li class="invoice-item">
-                        <div class="invoice-info">
-                            <p class="invoice-date">Март, 01, 2019</p>
-                            <h5 class="invoice-id">#AR-803481</h5>
-                        </div>
-                        <div class="invoice-right">
-                            <h5 class="invoice-sums">₽300</h5>
-                            <button class="pdf-invoice-button"><img src="/img/PDF-icon.svg" alt="pdf icon">PDF</button>
-                        </div>
-                    </li>   
-                </ul>
-        </section>
-        </main>
-        <footer>
-            <p>Творческое время</p>
-            <p>Блог</p>
-            <p>Лицензия</p>
-        </footer>
+    </main>                
+    <footer>
+        <p>Творческое время</p>
+        <p>Блог</p>
+        <p>Лицензия</p>
+    </footer>
 </body>
 </html>
