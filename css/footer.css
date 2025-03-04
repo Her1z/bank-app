@@ -1,9 +1,11 @@
 footer{
+    
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     gap:36px;
     color: #A0AEC0;
     font-size: 15px;
-    font-family:Helvetica, 'Times New Roman';
+    font-family:Helvetica, 'Times New Roman'; 
+    padding:20px;
  }
