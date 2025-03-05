@@ -49,15 +49,19 @@ body {
 }
 
 .info-sums-h {
+    margin-bottom: -10px;
     font-family: Helvetica;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: bold;
     line-height: 25.2px;
-    margin-left: 21px;
-    margin-top: 28px;
-    color: #2D3748;
+    color: black;
+    font-weight: 900px;
 }
 .info-sums {
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
     width: 900px;
     height: 538px;
     border-radius: 20px;
@@ -65,15 +69,11 @@ body {
 }
 
 .info-sums-block {
-    padding-top: 24px;
-    padding-left: 27px;
-    padding-right: 13px;
-    width: 855px;
-    height: 132.5px;
+    padding: 15px;
     border-radius: 8px;
     background-color: #F8F9FA;
-    margin-left: 21px;
-    margin-top: 24px;
+    width: 855px;
+    height: 132.5px;
 }
 
 .info-sums-up {
@@ -83,28 +83,31 @@ body {
 .info-sums-right {
     display: flex;
     margin-left: auto;
+    margin-top: 17px;
 }
 
 .info-sums-right-text {
     font-family: Helvetica;
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 10px;
     color: #E53E3E;
     margin-left: 3.5px;
     margin-right: 12px;
-    top: 5px;
+    margin-top: 0px;
+    background: none;
 }
 
 .info-sums-name {
     font-family: Helvetica;
     font-size: 14px;
-    font-weight: 400;
-    line-height: 19.6px;
+    font-weight: bold;
+    line-height: 33.6px;
     color:#718096;
 }
 
 .info-sums-text {
+    display: flex;
     width: 266px;
     margin-top: 7px;
     font-family: Helvetica;
@@ -113,4 +116,9 @@ body {
     line-height: 18px;
     color: #A0AEC0;
 }
+
+.info-sums-right-text:hover{
+    color: #e53e3eb4;
+}
+
 
